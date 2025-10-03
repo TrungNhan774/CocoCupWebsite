@@ -8,25 +8,142 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <!-- Header sẽ load ở đây -->
-  <div id="header"></div>
+  <!-- Header nhúng trực tiếp -->
+  <header class="site-header">
+    <div class="container navbar-surface header-bar">
+      <a href="index.html" class="logo">
+        <img src="../image/logo.jpg" alt="CocoLeaf logo" />
+      </a>
+      <nav class="primary-nav">
+        <ul class="navbar-nav">
+          <li><a class="nav-link nav-pill active" href="index.html">Trang chủ</a></li>
+          <li><a class="nav-link" href="about.html">Về CocoCup</a></li>
+          <li><a class="nav-link" href="product.html">Sản phẩm</a></li>
+          <li><a class="nav-link" href="post.html">Blog</a></li>
+          <li><a class="nav-link" href="contact.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <a href="order.html" class="btn btn-green nav-pill">ĐẶT HÀNG</a>
+    </div>
+  </header>
 
   <!-- Nội dung chính -->
   <main class="container my-5">
-    <div class="row align-items-center">
-      <div class="col-md-5">
-        <img src="../image/z7045172245217_a820479b21e5968f3ce0632e20e11902.jpg" class="img-fluid" alt="Coconut Leaf Cup">
+    <!-- Hero -->
+    <section class="hero p-5 p-md-6 mb-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="hero-badge mb-3">Thân thiện môi trường • Made from Coconut Leaf</span>
+          <h1 class="display-5 fw-bold section-title">CocoCup - Ly lá dừa phân hủy sinh học</h1>
+          <p class="lead mt-3">Giải pháp thay thế nhựa dùng một lần. An toàn cho sức khỏe, đẹp tự nhiên, phù hợp cho đồ uống nóng và lạnh.</p>
+          <div class="mt-4 d-flex gap-3">
+            <a href="product.html" class="btn btn-green px-4">Khám phá sản phẩm</a>
+            <a href="order.html" class="btn btn-outline-success px-4">Đặt hàng ngay</a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="../image/SP1.jpg" class="img-fluid rounded-4 shadow" alt="CocoCup product">
+        </div>
       </div>
-      <div class="col-md-7">
-        <h2>GIỚI THIỆU</h2>
-        <p><strong>Coconut Leaf Cup – 100% Tự nhiên</strong></p>
-        <p>Chiếc cốc thân thiện môi trường được làm hoàn toàn từ lá dừa, an toàn cho sức khỏe và dễ dàng phân hủy sinh học. Đây là lựa chọn hoàn hảo thay thế nhựa dùng một lần, vừa tiện lợi, vừa góp phần bảo vệ hành tinh xanh.</p>
+    </section>
+
+    <!-- Features -->
+    <section class="my-5 py-3">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card card-product h-100 p-3">
+            <div class="d-flex align-items-center mb-2"><i class="bi bi-recycle fs-3 me-2 text-success"></i><h5 class="mb-0">Phân hủy sinh học</h5></div>
+            <p class="mb-0">Thân thiện môi trường, giảm rác thải nhựa, phù hợp lối sống xanh.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-product h-100 p-3">
+            <div class="d-flex align-items-center mb-2"><i class="bi bi-shield-check fs-3 me-2 text-success"></i><h5 class="mb-0">An toàn thực phẩm</h5></div>
+            <p class="mb-0">Không vi nhựa, dùng được cho đồ nóng và lạnh với lớp phủ sinh học.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-product h-100 p-3">
+            <div class="d-flex align-items-center mb-2"><i class="bi bi-leaf fs-3 me-2 text-success"></i><h5 class="mb-0">Từ lá dừa tự nhiên</h5></div>
+            <p class="mb-0">Tận dụng phụ phẩm nông nghiệp, hỗ trợ cộng đồng trồng dừa địa phương.</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Product preview -->
+    <section class="my-5">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="section-title mb-0">Sản phẩm nổi bật</h3>
+        <a href="product.html" class="text-decoration-underline" style="color: var(--green-700);">Xem tất cả</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card card-product h-100">
+            <img src="../image/SP1.jpg" class="card-img-top" alt="SP1">
+            <div class="card-body">
+              <h5 class="card-title">Leafy Cup 300ml</h5>
+              <p class="card-text">Thiết kế tối giản, phù hợp mang đi.</p>
+              <div class="price">₫3.000 / chiếc</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-product h-100">
+            <img src="../image/SP2.jpg" class="card-img-top" alt="SP2">
+            <div class="card-body">
+              <h5 class="card-title">Leafy Cup 350ml</h5>
+              <p class="card-text">Cân bằng giữa dung tích và tính tiện dụng.</p>
+              <div class="price">₫3.500 / chiếc</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-product h-100">
+            <img src="../image/SP3.jpg" class="card-img-top" alt="SP3">
+            <div class="card-body">
+              <h5 class="card-title">Leafy Cup 400ml</h5>
+              <p class="card-text">Phù hợp thức uống dung tích lớn.</p>
+              <div class="price">₫4.000 / chiếc</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="text-center my-5 py-5 bg-white rounded-4 shadow-sm">
+      <h3 class="mb-3 section-title">Sẵn sàng chuyển sang ly xanh?</h3>
+      <p class="mb-4">Đặt hàng dùng thử cho quán của bạn hoặc sự kiện tiếp theo.</p>
+      <a href="order.html" class="btn btn-green px-4">Đặt hàng ngay</a>
+    </section>
   </main>
 
-  <!-- Footer sẽ load ở đây -->
-  <div id="footer"></div>
+  <!-- Footer tạm thời, sẽ được thay bằng footer.html -->
+  <div id="footer">
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Liên hệ</h5>
+            <p>Trường Đại học FPT Cần Thơ, 600 Đường Nguyễn Văn Cừ, Cần Thơ</p>
+            <p>Hotline: 1900 6750</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Kết nối với chúng tôi</h5>
+            <a href="https://www.facebook.com/CocoCupgr01" target="_blank" class="text-white me-3">
+              <i class="bi bi-facebook fs-4"></i>
+            </a>
+            <!-- Thêm các liên kết khác nếu cần (YouTube, Instagram, v.v.) -->
+          </div>
+          <div class="col-md-4">
+            <h5>Thực hiện bởi</h5>
+            <p>© 2025 CocoCup</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 
 <script>
   async function loadComponent(id, file) {
@@ -40,8 +157,9 @@
         highlightMenu();
       }
     } catch (err) {
-      console.error(err);
-      document.getElementById(id).innerHTML = `<div class="text-danger">Lỗi khi tải ${file}</div>`;
+      console.warn("Component load failed:", file, err);
+      // Không hiện lỗi ra giao diện để tránh gây khó chịu khi mở file trực tiếp
+      document.getElementById(id).innerHTML = "";
     }
   }
 
@@ -55,13 +173,36 @@
     });
   }
 
-  loadComponent("header", "header.html");
-  loadComponent("footer", "footer.html");
+  // Tạm thời không load footer.html để minh họa, sau đó bạn có thể bật lại
+  // loadComponent("footer", "footer.html");
 </script>
 
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Highlight tab and animate indicator
+    (function(){
+      const currentPath = window.location.pathname.split("/").pop() || "index.html";
+      const nav = document.querySelector('.navbar-nav');
+      const indicator = nav?.querySelector('.nav-indicator');
+      const items = nav?.querySelectorAll('.nav-link.nav-pill');
+      let activeEl = null;
+      items?.forEach(link => {
+        const linkPath = link.getAttribute("href").split('/').pop();
+        if (linkPath === currentPath) { link.classList.add('active'); activeEl = link; }
+        link.addEventListener('mouseenter', () => moveIndicator(link));
+        link.addEventListener('focus', () => moveIndicator(link));
+      });
+      nav?.addEventListener('mouseleave', () => { if (activeEl) moveIndicator(activeEl); });
+      function moveIndicator(el){
+        if (!indicator) return; indicator.style.display = 'block';
+        const rect = el.getBoundingClientRect();
+        const parentRect = nav.getBoundingClientRect();
+        const x = rect.left - parentRect.left; const w = rect.width;
+        indicator.style.transform = `translate(${x}px, -50%)`;
+        indicator.style.width = `${w}px`;
+      }
+      if (activeEl) moveIndicator(activeEl);
+    })();
+  </script>
 </body>
 </html>
